@@ -14,3 +14,10 @@ Enter the # of days in the month: 30
 You earned $0.2 interest. 
 (2 points) 
 """
+principal =float(input("Please enter the amount of principal."))
+Days =float(input("Please enter the days in the month."))
+rate = float(input("Please enter the rate.")) / 100
+
+interest = principal * rate * Days / 365
+interest = round(interest,1)
+print(f"you earned ${interest} interest.")
